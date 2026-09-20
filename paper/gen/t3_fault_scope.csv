@@ -1,0 +1,5 @@
+fault,pod,namespace,cluster
+backend-down,5/5,5/5,5/5
+badimage,5/5,5/5,4/5
+dns-blocked,2/5,3/5,5/5
+oom,5/5,5/5,5/5

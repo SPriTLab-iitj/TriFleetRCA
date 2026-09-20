@@ -1,0 +1,4 @@
+scope,n,hit_rate,ci95,grounded,median_latency_s,median_prompt_tok
+pod,20,0.85,"[0.64, 0.95]",0.75,1.68,2155
+namespace,20,0.9,"[0.70, 0.97]",0.75,1.62,2176
+cluster,20,0.95,"[0.76, 0.99]",0.75,1.62,3361
