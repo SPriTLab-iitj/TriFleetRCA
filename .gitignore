@@ -10,3 +10,4 @@ paper/*.out
 paper/*.blg
 paper/*.synctex.gz
 arxiv.tgz
+paper/references_tricalrag.bib
