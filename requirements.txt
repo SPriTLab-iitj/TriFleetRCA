@@ -1,0 +1,6 @@
+openai
+rank-bm25
+requests
+pandas
+matplotlib
+jinja2
