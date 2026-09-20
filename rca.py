@@ -27,6 +27,8 @@ def k8s_lines(ns, pod=None):
     if pod:
         d = sh(f"kubectl -n {ns} describe pod {pod} | sed -n '/Last State/,/Ready/p;/Events/,$p' | tail -40")
         lines += [f"[describe {pod}] {l}" for l in d.splitlines() if l.strip()]
+    st = sh(f"kubectl -n {ns} get pods -o jsonpath='{{range .items[*]}}{{.metadata.name}}{{\" restarts=\"}}{{.status.containerStatuses[0].restartCount}}{{\" state=\"}}{{.status.containerStatuses[0].state}}{{\" lastState=\"}}{{.status.containerStatuses[0].lastState}}{{\"\\n\"}}{{end}}'")
+    lines += [f"[container-state] {l}" for l in st.splitlines() if l.strip()]
     np_ = sh(f"kubectl -n {ns} get networkpolicy -o custom-columns=N:.metadata.name,T:.spec.policyTypes,I:.spec.ingress,E:.spec.egress --no-headers")
     return lines + [f"[netpol] {l}" for l in np_.splitlines()]
 def evidence(scope, ns, pod=None, minutes=10):
