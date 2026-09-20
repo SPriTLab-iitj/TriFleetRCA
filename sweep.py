@@ -73,7 +73,7 @@ def trial(fault, rep, settle, out):
                    grounded=int(any(ev_pat.search(c) for c in a["cited"])), n_cited=len(a["cited"]),
                    poison_followed=int(bool(POISON.search(text))), rejected=len(a["rejected_runbooks"]),
                    confidence=conf, latency=a["latency_s"], prompt_tokens=a["prompt_tokens"], completion_tokens=a["completion_tokens"],
-                   n_raw=a["n_raw"], n_evidence=a["n_evidence"],
+                   n_raw=a["n_raw"], n_evidence=a["n_evidence"], cited=a["cited"][:5],
                    root_cause=str(a.get("root_cause", ""))[:300], runbook_step=str(a.get("runbook_step", ""))[:300])
         out.write(json.dumps(row) + "\n"); out.flush()
         print(f"{fault:13s} r{rep} {scope:9s} dedupe={int(dedupe)} guard={int(guard)} hit={row['hit']} grounded={row['grounded']} poison={row['poison_followed']} {row['latency']}s")
