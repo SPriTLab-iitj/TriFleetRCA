@@ -1,10 +1,9 @@
-<!-- Public repo README. Fill the TODOs at step 8, then: git mv README.md docs/WORKLOG.md && git mv README.public.md README.md -->
 
 # TriFleetRCA
 
 **On-Premise LLM Root Cause Analysis for Kubernetes**
 
-Rohit Patel, TODO co-authors · Dept. of Computer Science and Engineering, IIT Jodhpur
+Rohit Patel, Susil Kumar Mohanty, Jeenal Chaudhary · Dept. of Computer Science and Engineering, IIT Jodhpur
 
 [![arXiv](https://img.shields.io/badge/arXiv-TODO-b31b1b.svg)](https://arxiv.org/abs/TODO) [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/DOI/TODO.svg)](https://doi.org/TODO)
 
