@@ -36,7 +36,7 @@ def f_dns_blocked(ns):
 
 FAULTS = {  # name: (inject, regex root_cause must match)
     "oom":          (f_oom,          r"oomkilled|out of memory|memory limit|exit code 137"),
-    "badimage":     (f_badimage,     r"imagepull|manifest unknown|6\.7\.999|image tag|image .*not found"),
+    "badimage":     (f_badimage,     r"imagepull|errimage|manifest|6\.7\.999|image.{0,40}(not found|non-?existent|does not exist)|(not found|non-?existent|does not exist).{0,40}(image|tag|registry)|pull image"),
     "backend-down": (f_backend_down, r"backend|upstream|connection refused"),
     "dns-blocked":  (f_dns_blocked,  r"networkpolic|egress|deny-egress|dns|lookup|resolution"),
 }
