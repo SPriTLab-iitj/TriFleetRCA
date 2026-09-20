@@ -1,6 +1,6 @@
 # TriFleetRCA (v1)
 
-**TriFleetRCA: A Three-Scope, Evidence-Cited Framework with Guarded Runbooks for Site-Local LLM-Based Root Cause Analysis on Kubernetes**
+**TriFleetRCA: On-Premise LLM Root Cause Analysis for Kubernetes**
 
 | Part of the name | Meaning |
 |---|---|

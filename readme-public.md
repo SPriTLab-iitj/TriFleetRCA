@@ -2,7 +2,7 @@
 
 # TriFleetRCA
 
-**A Three-Scope, Evidence-Cited Framework with Guarded Runbooks for Site-Local LLM-Based Root Cause Analysis on Kubernetes**
+**On-Premise LLM Root Cause Analysis for Kubernetes**
 
 Rohit Patel, TODO co-authors · Dept. of Computer Science and Engineering, IIT Jodhpur
 
